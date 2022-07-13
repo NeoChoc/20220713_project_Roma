@@ -1,8 +1,4 @@
 @font-face {
-	font-family: 'Santio';
-	src: url(../fonts/SANTIO/TTF/Santio\ regular.ttf);
-}
-@font-face {
 	font-family: 'Santio bold';
 	src: url(../fonts/SANTIO/TTF/Santio\ Bold.ttf);
 }
@@ -15,10 +11,10 @@
 	src: url(../fonts/Tangerine/Tangerine-Regular.ttf);
 }
 
-/* Farbe: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff */ */
+/* Farbe: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff */
+*/
 
 /* -- general */
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -35,45 +31,38 @@ body {
 
 h1 {
 	color: #fff;
-	font-family: Santio bold;
-	font-size: 4.8rem;
+	font-family: 'Santio bold';
+	font-size: 5rem;
 	text-transform: uppercase;
-	max-width: 41rem;
+	max-width: 42rem;
 }
 
 h2 {
 	color: #fff;
 	font-family: Santio bold;
+	font-size: 4.7rem;
+	margin-top: 12.4rem;
 	text-transform: uppercase;
+	width: 21rem;
 }
 
 span {
-	background-color: #000;
+	background-color: rgb(41, 41, 41);
 	color: #fff;
+	padding: 0 0.6rem 0.6rem 0.6rem;
 }
 
 p {
 	color: #fff;
+	font-family: 'Santio bold';
+	font-size: 2rem;
 }
 
 a {
 	color: #fff;
 }
 
-/* button */
-.btn {
-	background-color: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-	padding: 0.7rem 1.3rem;
-}
-
-.btn:hover {
-	box-shadow: 2px 2px #fff;
-}
-
 /* -- content */
-
 /* header+main - background */
 /* parallax scroll effect */
 .parallax {
@@ -92,37 +81,64 @@ a {
 
 /* -- header */
 .header {
+	padding: 0.2rem 7rem 0 8.5rem;
+	position: relative;
 }
 
 .header__img {
-	height: 2%;
-	width: 2%;
+	margin: 1rem 10rem 0 0;
+	padding-right: 4.4rem;
+	position: absolute;
+	right: 0;
+	width: 1rem;
 }
 
 .header__link {
+	font-family: Roboto;
+	font-weight: normal;
+	margin: 1rem 8.5rem;
+	position: absolute;
+	right: 0;
 	text-decoration: underline #e7bc0e;
+	text-underline-position: under;
+	font-size: 0.9rem;
+}
+
+.header__link:hover {
+	color: #e7bc0e;
+}
+
+.transparent {
+	background-color: rgb(13 13 4 / 59%);
+	z-index: 9999;
 }
 
 /* -- main */
 /* main - general */
-.main {
-}
-
 .page {
 	height: 100vh;
 }
 
 /* text-style */
-.page__text {
+.text--normal {
+	margin: 0.2rem 0;
 	text-transform: uppercase;
 }
 
+/* text on page one */
 .text--italic {
 	/* TODO arrow */
+	font-family: Tangerine;
+	font-size: 2rem;
+	padding-left: 8.5rem;
+	font-weight: bold;
 }
 
-.page_text--big {
-	font-size: 4rem;
+.text--big {
+	font-size: 7.4rem;
+	line-height: 6.4rem;
+	margin: 0;
+	padding: 0rem 0 1rem 0;
 }
 
 .text--yellow {
@@ -141,53 +157,94 @@ a {
 	color: #7eb8e1;
 }
 
-/* icon-size */
-.page__img {
-	height: 5%;
-	width: 5%;
-}
-
 /* - page one */
-.page__one {
+.page__one .text--green {
+	font-size: 1.8rem;
+	line-height: 3rem;
+	margin-top: 23rem;
+	padding: 0 34.5rem 0 15.5rem;
 }
 
 /* - page two */
 .page__two {
+	margin-top: 21rem;
+	padding: 0 8.5rem;
 }
 
-.page__two .page__wrapper {
+/* icon-size */
+.page__img {
+	width: 8rem;
+}
+
+.page__img--1 {
+	padding: 9.5rem 0;
+}
+
+.page__img--2 {
+	padding: 11rem 0 2.5rem 0;
+}
+
+.page__img--3 {
+	padding: 11rem 0;
 }
 
 /* - page three */
 .page__three {
+	padding: 63rem 8rem 0 29rem;
+	height: 20%;
+}
+
+.page__three .text--blue {
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+	margin: 4.7rem 0 0 0;
+	padding-bottom: 6rem;
 }
 
 /* -- footer */
 .footer {
 	background-color: #000;
-	height: 230vh;
-	margin: 0;
+	position: sticky;
+	margin-bottom: 0;
 }
 
 .footer__wrapper {
-	padding: 7rem 5rem 2rem 5rem;
+	padding: 7rem 8.5rem 2rem 8.5rem;
 }
 
 .footer__img {
-	background-color: #fff;
+	background-color: rgb(240 240 230);
 	background-image: url(../img/see.png);
 	background-size: cover;
-	/* TODO height entfernen */
-	/* height: 36vh; */
+	margin-bottom: 8rem;
 	width: 100%;
 }
 
+/* button */
+.btn {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 0.9rem 1.8rem;
+}
+
+.btn:hover {
+	box-shadow: 5px 5px #fff;
+}
+
 .footer__text {
-	font-size: 1rem;
+	font-family: 'Roboto';
+	font-size: 0.7rem;
+	margin: 15rem 0 7rem 0;
 	text-align: center;
 }
 
 .footer__link {
-	font-size: 1rem;
-	padding: 1rem;
+	font-size: 0.7rem;
+	text-decoration: none;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
 }
