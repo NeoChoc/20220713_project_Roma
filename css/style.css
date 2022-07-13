@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'Santio';
+	src: url(../fonts/SANTIO/TTF/Santio\ regular.ttf);
+}
+@font-face {
+	font-family: 'Santio bold';
+	src: url(../fonts/SANTIO/TTF/Santio\ Bold.ttf);
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: 'Tangerine';
+	src: url(../fonts/Tangerine/Tangerine-Regular.ttf);
+}
+
+/* Farbe: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff */ */
+
+/* -- general */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+h1 {
+	color: #fff;
+	font-family: Santio bold;
+	font-size: 4.8rem;
+	text-transform: uppercase;
+	max-width: 41rem;
+}
+
+h2 {
+	color: #fff;
+	font-family: Santio bold;
+	text-transform: uppercase;
+}
+
+span {
+	background-color: #000;
+	color: #fff;
+}
+
+p {
+	color: #fff;
+}
+
+a {
+	color: #fff;
+}
+
+/* button */
+.btn {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 0.7rem 1.3rem;
+}
+
+.btn:hover {
+	box-shadow: 2px 2px #fff;
+}
+
+/* -- content */
+
+/* header+main - background */
+/* parallax scroll effect */
+.parallax {
+	/* The image used */
+	background-image: url('../img/cleo-topper.jpg');
+
+	/* Set a specific height */
+	min-height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* -- header */
+.header {
+}
+
+.header__img {
+	height: 2%;
+	width: 2%;
+}
+
+.header__link {
+	text-decoration: underline #e7bc0e;
+}
+
+/* -- main */
+/* main - general */
+.main {
+}
+
+.page {
+	height: 100vh;
+}
+
+/* text-style */
+.page__text {
+	text-transform: uppercase;
+}
+
+.text--italic {
+	/* TODO arrow */
+}
+
+.page_text--big {
+	font-size: 4rem;
+}
+
+.text--yellow {
+	color: #e7bc0e;
+}
+
+.text--pink {
+	color: #cb91b6;
+}
+
+.text--green {
+	color: #6bc1a3;
+}
+
+.text--blue {
+	color: #7eb8e1;
+}
+
+/* icon-size */
+.page__img {
+	height: 5%;
+	width: 5%;
+}
+
+/* - page one */
+.page__one {
+}
+
+/* - page two */
+.page__two {
+}
+
+.page__two .page__wrapper {
+}
+
+/* - page three */
+.page__three {
+}
+
+/* -- footer */
+.footer {
+	background-color: #000;
+	height: 230vh;
+	margin: 0;
+}
+
+.footer__wrapper {
+	padding: 7rem 5rem 2rem 5rem;
+}
+
+.footer__img {
+	background-color: #fff;
+	background-image: url(../img/see.png);
+	background-size: cover;
+	/* TODO height entfernen */
+	/* height: 36vh; */
+	width: 100%;
+}
+
+.footer__text {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.footer__link {
+	font-size: 1rem;
+	padding: 1rem;
+}
